@@ -9,7 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface CommentsViewController : UIViewController
+@interface CommentsViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
 @end
 

@@ -6,6 +6,7 @@
 //
 
 #import "ViewController.h"
+#import "WebViewController.h"
 #import "HTTPService.h"
 #import "Video.h"
 #import "VideoCell.h"
@@ -72,6 +73,10 @@
 }
 
 -(void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath  {
+    Video *video = [self.videoList objectAtIndex:indexPath.row];
+    
+    [self performSegueWithIdentifier:@"toWebView" sender:video];
+    
     
 }
 
@@ -95,6 +100,17 @@
     return 1;
 }
 
+- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    
+    WebViewController *WVController = (WebViewController*) segue.destinationViewController;
+        
+    Video *video = (Video*) sender;
+    
+    WVController.video = video;
+    
+    
+    
+}
 
 
 

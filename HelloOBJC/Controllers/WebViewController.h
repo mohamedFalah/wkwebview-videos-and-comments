@@ -6,10 +6,12 @@
 //
 
 #import <UIKit/UIKit.h>
-
+@class Video;
 NS_ASSUME_NONNULL_BEGIN
 
-@interface WebViewController : UIViewController
+@interface WebViewController : UIViewController 
+
+@property (nonatomic, strong) Video *video;
 
 @end
 

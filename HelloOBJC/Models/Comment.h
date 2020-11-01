@@ -11,6 +11,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface Comment : NSObject
 
+@property (nonatomic, strong) NSString *username;
+@property (nonatomic, strong) NSString *comment;
+
 @end
 
 NS_ASSUME_NONNULL_END

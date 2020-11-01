@@ -6,11 +6,11 @@
 //
 
 #import <UIKit/UIKit.h>
-
+@class Comment;
 NS_ASSUME_NONNULL_BEGIN
 
-@interface commentCell : UITableViewCell
-
+@interface CommentCell : UITableViewCell
+- (void) configureCell: (nonnull Comment*)comment;
 @end
 
 NS_ASSUME_NONNULL_END

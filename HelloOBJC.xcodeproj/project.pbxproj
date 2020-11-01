@@ -16,6 +16,13 @@
 		D5353C1225450484004C5CE2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D5353C1125450484004C5CE2 /* main.m */; };
 		D5353C1C25450485004C5CE2 /* HelloOBJCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D5353C1B25450485004C5CE2 /* HelloOBJCTests.m */; };
 		D5353C2725450485004C5CE2 /* HelloOBJCUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D5353C2625450485004C5CE2 /* HelloOBJCUITests.m */; };
+		D55266A8254BBF94007CE3E4 /* VideoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D55266A7254BBF94007CE3E4 /* VideoCell.m */; };
+		D55266AF254BC750007CE3E4 /* Video.m in Sources */ = {isa = PBXBuildFile; fileRef = D55266AE254BC750007CE3E4 /* Video.m */; };
+		D55266BC254BFB22007CE3E4 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D55266BB254BFB22007CE3E4 /* WebViewController.m */; };
+		D564ECAC254D1C45000EF630 /* CommentsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D564ECAB254D1C45000EF630 /* CommentsViewController.m */; };
+		D564ECB2254D1C66000EF630 /* Comment.m in Sources */ = {isa = PBXBuildFile; fileRef = D564ECB1254D1C66000EF630 /* Comment.m */; };
+		D564ECB8254D1CE4000EF630 /* CommentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D564ECB7254D1CE4000EF630 /* CommentCell.m */; };
+		D5E5BFDD254A859C00F150A8 /* HTTPService.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E5BFDC254A859C00F150A8 /* HTTPService.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +61,20 @@
 		D5353C2225450485004C5CE2 /* HelloOBJCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelloOBJCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5353C2625450485004C5CE2 /* HelloOBJCUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelloOBJCUITests.m; sourceTree = "<group>"; };
 		D5353C2825450485004C5CE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D55266A6254BBF94007CE3E4 /* VideoCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoCell.h; sourceTree = "<group>"; };
+		D55266A7254BBF94007CE3E4 /* VideoCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoCell.m; sourceTree = "<group>"; };
+		D55266AD254BC750007CE3E4 /* Video.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Video.h; sourceTree = "<group>"; };
+		D55266AE254BC750007CE3E4 /* Video.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Video.m; sourceTree = "<group>"; };
+		D55266BA254BFB22007CE3E4 /* WebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		D55266BB254BFB22007CE3E4 /* WebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
+		D564ECAA254D1C44000EF630 /* CommentsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommentsViewController.h; sourceTree = "<group>"; };
+		D564ECAB254D1C45000EF630 /* CommentsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommentsViewController.m; sourceTree = "<group>"; };
+		D564ECB0254D1C66000EF630 /* Comment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Comment.h; sourceTree = "<group>"; };
+		D564ECB1254D1C66000EF630 /* Comment.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Comment.m; sourceTree = "<group>"; };
+		D564ECB6254D1CE4000EF630 /* CommentCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommentCell.h; sourceTree = "<group>"; };
+		D564ECB7254D1CE4000EF630 /* CommentCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommentCell.m; sourceTree = "<group>"; };
+		D5E5BFDB254A859C00F150A8 /* HTTPService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HTTPService.h; sourceTree = "<group>"; };
+		D5E5BFDC254A859C00F150A8 /* HTTPService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HTTPService.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,12 +125,14 @@
 		D5353BFE25450480004C5CE2 /* HelloOBJC */ = {
 			isa = PBXGroup;
 			children = (
+				D55266B9254BFAFB007CE3E4 /* Controllers */,
+				D55266AC254BC737007CE3E4 /* Models */,
+				D5526699254BBF43007CE3E4 /* Views */,
+				D5E5BFDA254A858300F150A8 /* Services */,
 				D5353BFF25450480004C5CE2 /* AppDelegate.h */,
 				D5353C0025450480004C5CE2 /* AppDelegate.m */,
 				D5353C0225450480004C5CE2 /* SceneDelegate.h */,
 				D5353C0325450480004C5CE2 /* SceneDelegate.m */,
-				D5353C0525450480004C5CE2 /* ViewController.h */,
-				D5353C0625450480004C5CE2 /* ViewController.m */,
 				D5353C0825450480004C5CE2 /* Main.storyboard */,
 				D5353C0B25450484004C5CE2 /* Assets.xcassets */,
 				D5353C0D25450484004C5CE2 /* LaunchScreen.storyboard */,
@@ -135,6 +158,50 @@
 				D5353C2825450485004C5CE2 /* Info.plist */,
 			);
 			path = HelloOBJCUITests;
+			sourceTree = "<group>";
+		};
+		D5526699254BBF43007CE3E4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D55266A6254BBF94007CE3E4 /* VideoCell.h */,
+				D55266A7254BBF94007CE3E4 /* VideoCell.m */,
+				D564ECB6254D1CE4000EF630 /* CommentCell.h */,
+				D564ECB7254D1CE4000EF630 /* CommentCell.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D55266AC254BC737007CE3E4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D55266AD254BC750007CE3E4 /* Video.h */,
+				D55266AE254BC750007CE3E4 /* Video.m */,
+				D564ECB0254D1C66000EF630 /* Comment.h */,
+				D564ECB1254D1C66000EF630 /* Comment.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D55266B9254BFAFB007CE3E4 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D5353C0625450480004C5CE2 /* ViewController.m */,
+				D5353C0525450480004C5CE2 /* ViewController.h */,
+				D55266BA254BFB22007CE3E4 /* WebViewController.h */,
+				D55266BB254BFB22007CE3E4 /* WebViewController.m */,
+				D564ECAA254D1C44000EF630 /* CommentsViewController.h */,
+				D564ECAB254D1C45000EF630 /* CommentsViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		D5E5BFDA254A858300F150A8 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D5E5BFDB254A859C00F150A8 /* HTTPService.h */,
+				D5E5BFDC254A859C00F150A8 /* HTTPService.m */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,9 +334,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				D5353C0725450480004C5CE2 /* ViewController.m in Sources */,
+				D55266A8254BBF94007CE3E4 /* VideoCell.m in Sources */,
+				D5E5BFDD254A859C00F150A8 /* HTTPService.m in Sources */,
+				D564ECB2254D1C66000EF630 /* Comment.m in Sources */,
+				D55266BC254BFB22007CE3E4 /* WebViewController.m in Sources */,
 				D5353C0125450480004C5CE2 /* AppDelegate.m in Sources */,
+				D564ECAC254D1C45000EF630 /* CommentsViewController.m in Sources */,
 				D5353C1225450484004C5CE2 /* main.m in Sources */,
+				D564ECB8254D1CE4000EF630 /* CommentCell.m in Sources */,
 				D5353C0425450480004C5CE2 /* SceneDelegate.m in Sources */,
+				D55266AF254BC750007CE3E4 /* Video.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
